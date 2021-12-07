@@ -15,3 +15,6 @@ Fuckcms为主文件
 Tidefinger
 # 运行结果
 ![image](https://user-images.githubusercontent.com/67416400/145021161-b72f0fec-ba4b-4445-a200-1d2d47976e87.png)
+# 免责声明
+未经授权许可使用Fuckcms攻击目标是非法的
+本程序应仅用于授权的安全测试与研究目的
