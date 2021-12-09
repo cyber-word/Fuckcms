@@ -1,0 +1,11 @@
+pip3/pip install 以下模块
+ requests
+ user_agent
+ bs4 
+ lxml
+ urllib
+ re
+ threading
+ sqlite3
+ time
+ queue 
