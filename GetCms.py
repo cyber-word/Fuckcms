@@ -126,10 +126,3 @@ def GetWebInfo(queue, Dbs):
         queue.task_done()
     # print(r.headers)  # 获得响应头信息
 
-# GetWebInfo("http://www.lcnjj.cn/")
-# >> `{'X-Processed-Time': '0.000617980957031', 'Connection': 'keep-alive', 'Via': '1.1 vegur',
-#      'Content-Length': '268', 'X-Powered-By': 'Flask', 'Date': 'Thu, 23 Nov 2017 04:13:40 GMT',
-#      'Server': 'meinheld/0.6.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true',
-#      'Content-Type': 'application/json'}
-# >> application / json
-# >> 268
