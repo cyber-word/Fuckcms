@@ -106,7 +106,7 @@ def GetWebInfo(queue, Dbs):
                 if Dbs == "tide":
                     ThisWebInfo.print()
                     print("\033[32m使用tide指纹库识别的结果:\033[0m")
-                    GetCmsFromTide.Get_rule_from_tide(title, headers, bodys)
+                    GetCmsFromTide.Get_rule_from_tide(url, title, headers, bodys)
                 if Dbs == "cms":
                     ThisWebInfo.print()
                     print("\033[32m使用cms指纹库识别的结果:\033[0m")
@@ -114,7 +114,7 @@ def GetWebInfo(queue, Dbs):
                 if Dbs == "all":
                     ThisWebInfo.print()
                     print("\033[32m使用tide指纹库识别的结果:\033[0m")
-                    GetCmsFromTide.Get_rule_from_tide(title, headers, bodys)
+                    GetCmsFromTide.Get_rule_from_tide(url, title, headers, bodys)
                     print("\033[32m使用cms指纹库识别的结果:\033[0m")
                     GetCmsFromCms.Get_rule_from_cms(url)
             except Exception as error:
