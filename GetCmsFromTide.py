@@ -29,7 +29,7 @@ def Match_rule_for_tide(key, title, header, body):
         return cms1
 
 
-def Get_rule_from_tide(title, header, body):
+def Get_rule_from_tide(url, title, header, body):
     start_time = time.time()
     conn = sqlite3.connect('cms_finger.db')
     cursor = conn.cursor()
@@ -43,5 +43,9 @@ def Get_rule_from_tide(title, header, body):
             str1 = "cms识别结果(指纹库:tide):"+Match_rule_for_tide(result[0], title, header, body)
             print("\033[33m"+str1+"\033[0m")
             cms1 = "未识别出cms"
+            dir = 'fuckurl.txt'
+            fp = open(dir, 'a')
+            fp.write(url+" "+str1+'\n')
+            fp.close()
             break
     print("\033[32m""运行了"+str(time.time() - start_time)+"秒""\033[0m")
