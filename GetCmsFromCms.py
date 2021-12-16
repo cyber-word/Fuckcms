@@ -78,8 +78,8 @@ def Get_rule_from_cms(url):
             print("\033[33m" + str1 + "\033[0m")
             cms2 = "未识别出cms"
             dir = 'fuckurl.txt'
-            fp = open(dir, 'w')
-            fp.write(url+" "+str1)
+            fp = open(dir, 'a')
+            fp.write(url+" "+str1+'\n')
             fp.close()
             break
     print("\033[32m""cms识别(指纹库:cms)运行了" + str(time.time() - start_time) + "秒""\033[0m")
