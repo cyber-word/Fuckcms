@@ -11,6 +11,10 @@ from threading import Thread  # 引入多线程
 from queue import Queue  # 引入队列机制
 import time
 import banner
+import os
+
+if os.name == "nt":
+    os.system("")
 
 # Check py version
 def CheckVersion():
